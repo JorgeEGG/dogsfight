@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #253659;
+    /* background-image: url(./assets/Menta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #F27457;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    color: #04BF9D
+}
+
+.subtitulo-uno {
+    color: white;
+    font-size: 30px;
+}
+
+.subtitulo img {
+    width: 40px;
+}
+
+#figuras-def {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 35px;
+}
+
+#figuras-def img {
+    width: 100px;
+}
+
+#figuras-def p {
+    color: #F27457;
+    font-size: 40px;
+}
+
+.vidas {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.vidas div {
+    text-align: center;
+}
+
+.vidas p {
+    color: #F27457;
+}
+
+/* #vidas-jugador,
+#vidas-enemigo {
+    font-size: 80px;
+    margin: 20px 0px 5px;
+} */
+
+#victorias-jugador,
+#victorias-enemigo {
+    font-size: 80px;
+    margin: 20px 0px 5px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 50px;
+    margin: 60px
+}
+
+.tarjeta-de-dogsfight {
+    width: 350px;
+    height: 250px;
+    background-color: #03A696;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.tarjeta-de-dogsfight:hover {
+    cursor: pointer;
+    background-color: #BF665E;
+    /* border: 2px solid whitesmoke; */
+    transform: scale(1.1);
+}
+
+.tarjeta-de-dogsfight img {
+    width: 150px;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: #BF665E;
+    border: 2px solid whitesmoke;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+#boton-mascota:hover,
+#boton-reiniciar:hover,
+.boton-de-ataque:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-de-ataque {
+    display: flex;
+}
+
+.boton-de-ataque {
+    background-color: #03A696;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 150px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#mensajes {
+    border: 2px solid white;
+    width: 400px;
+    padding: 20px;
+    margin-top: 40px;
+    color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques p {
+    color: #F27457;
+    /* color: orangered; */
+}
+
+.ataques div {
+    text-align: center;
+}
+
+#mascota-jugador-atq,
+#mascota-enemigo-atq {
+    margin-top: 40px;
+}
+
+#ataques-del-jugador p,
+#ataques-del-enemigo p {
+    color: white;
+}
+
+#reiniciar {
+    justify-content: center;
+}
+
+#boton-reiniciar {
+    border-color: transparent;
+    background: #03A696;
+    color: whitesmoke;
+    font-family: 'Exo 2', sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 10px 15px;
+}
+
+@media (max-width: 425px) {
+
+    .tarjetas,
+    .botones-de-ataque {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 60px;
+    }
+
+    .tarjeta-de-dogsfight {
+        width: 250px;
+    }
+}

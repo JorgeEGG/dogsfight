@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs-Fight</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">Dogs Fight</h1>
+        <h2 class="subtitulo">La Pelea de los Kanes</h2>
+        <h3 class="subtitulo-uno">Elige tu mascota:</h3>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+        <!-- Aquí vienen las tarjetas de los perros (ver la estructura en JS) Se generó el id para referenciarlo en JS con la variable contenedorTarjetas enJS -->
+        </div>
+
+        <button id="boton-mascota">¡A la Pelea!</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">Dogs Fight</h1>
+        <h2 class="subtitulo">La Pelea de los Kanes</h2>
+
+        <div class="figuras">
+            <div id="figuras-def">
+                <span id="mascota-jugador-img"></span>
+                <p>VS.</p>
+                <span id="mascota-enemigo-img"></span>
+            </div>
+            <div class="vidas">
+                <div>
+                    <h2 class="subtitulo"><span id="mascota-jugador"></span></h2>
+                    <p id="victorias-jugador">0</p>
+                </div>
+                <div>
+                    <h2 class="subtitulo"><span id="mascota-enemigo"></span></h2>
+                    <p id="victorias-enemigo">0</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="subtitulo-uno">Elige tu ataque:</h3>
+
+        <div id="contenedorAtaques" class="botones-de-ataque">
+            <!-- Aquí estaban los botones de los ataques -->
+        </div>
+
+        <div id="mensajes">
+            <p id="resultado">¡SUERTE EN TUS BATALLAS!</p>
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+
+        <div class="ataques">
+            <div>
+                <p id="mascota-jugador-atq"></p>
+
+                <div id="ataques-del-jugador"></div>
+            </div>
+            
+            <div>
+                <p id="mascota-enemigo-atq"></p>
+
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/dogsfight.js"></script>
+
+</body>
+
+</html>
